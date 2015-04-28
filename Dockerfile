@@ -1,6 +1,6 @@
 FROM google/debian:wheezy
 
-RUN apt-get update -y && apt-get install --no-install-recommends -y -q curl ssh sudo locales build-essential ca-certificates git mercurial bzr
+RUN apt-get update -y && apt-get install --no-install-recommends -y -q curl net-tools ssh sudo locales build-essential ca-certificates git mercurial bzr
 #locales
 ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
